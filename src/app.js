@@ -26,7 +26,9 @@ const TileTemplate = C => `<div class="${Styles.tile}" data-type='tile'>
 	</div>
 </div>`
 
-const TileWrapper = tiles => `<section class="${Styles.wrapper}">${tiles.join('')}</section>`
+const TileWrapper = tiles => `<section class="${Styles.wrapper}" data-type="wrapper">
+	${tiles.join('')}
+</section>`
 
 
 function getMousePosition(e) {
@@ -35,16 +37,22 @@ function getMousePosition(e) {
 	const { left, top, width, height, center } = STATE.tile
 	const tileX = x - left - (width / 2) - STATE.app.left
 	const tileY = y - top - (height / 2) - STATE.app.top
-	const pctX = ((tileX / width) * 2)
-	const pctY = ((tileY / height) * 2) * -1
+	let pctX = ((tileX / width) * 2) * -1
+	let pctY = ((tileY / height) * 2)
+	const highlight = STATE.tile.elem.querySelector('[data-type="highlight"]')
 	// console.table([{pctX}, {pctY}])
-	// console.log(STATE.tile.elem)
 	const inner = STATE.tile.elem.querySelector('[data-type="inner"]')
-	inner.style.transform = `rotateX(${pctY * 5}deg) rotateY(${pctX * 5}deg) scale(1.3)`
+	// console.log(STATE.tile.elem)
+	if (pctY > 1) pctY = 1
+	if (pctY < -1) pctY = -1
+	if (pctX > 1) pctX = 1
+	if (pctX < -1) pctX = -1
+
+	inner.style.transform = `rotateX(${pctY * 2}deg) rotateY(${pctX * 2}deg) scale(1.2)`
+
 	const maxPct = Math.max(pctX < 0 ? pctX*-1 : pctX, (pctY < 0 ? pctY*-1 : pctY))
 	inner.style.boxShadow = `${pctX * -1 * 40}px ${pctY * 40}px ${maxPct * 80}px 0px rgba(0,0,0, ${1 - (Math.max(0.4, (maxPct-0.6)))})`
-	const highlight = STATE.tile.elem.querySelector('[data-type="highlight"]')
-	highlight.style.transform = `translate3d(${50 * pctX}%, ${50 * pctY * -1}%, 0)`
+	highlight.style.transform = `translate3d(${50 * pctX * -1}%, ${50 * pctY}%, 0)`
 }
 
 
@@ -70,11 +78,13 @@ function tiltHover(e) {
 
 	STATE.tile = { top: (top - window.scrollY), left, width, height, center, elem: this }
 	highlight.style.opacity = 1
+
 }
 
 function tiltReset(e) {
 	const inner = this.querySelector('[data-type="inner"]')
 	const highlight = this.querySelector('[data-type="highlight"]')
+	TILES.forEach(tile => tile.querySelector('[data-type="inner"]').style.transform = '')
 	highlight.style.opacity = 0
 	inner.style.transform = ''
 	inner.style.boxShadow = ''
@@ -88,7 +98,9 @@ STATE.app = {
 	top: APP.offsetTop
 }
 const TILES = document.querySelectorAll('[data-type="tile"]')
+const wrapper = APP.querySelector('[data-type="wrapper"]')
 
 TILES.forEach(tile => tile.addEventListener('mouseover', tiltHover))
-TILES.forEach(tile => tile.addEventListener('mouseout', tiltReset))
-APP.addEventListener('mousemove', getMousePosition)
+TILES.forEach(tile => tile.addEventListener('mouseleave', tiltReset))
+wrapper.addEventListener('mousemove', getMousePosition)
+wrapper.addEventListener('mouseleave', tiltReset)
