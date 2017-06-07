@@ -1,6 +1,7 @@
 import CONFIG from './config.json'
 import Content from './content/content'
 import Styles from './app.sass'
+import createSrcSet from './functions/createSrcSet'
 
 const STATE = {
 	mouse: null,
@@ -18,7 +19,10 @@ const APP = document.querySelector(`#${CONFIG.projectName}`)
 
 const TileTemplate = C => `<div class="${Styles.tile}" data-type='tile'>
 	<div class="${Styles.inner}" data-type='inner' style="background: rgba(${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, 1)">
-		<img class="${Styles.image}" src="${C.image.src.Img400}" alt="${C.image.alt}" />
+		<img class="${Styles.image}" src="${C.image.src.Img200}" srcset="${createSrcSet(C.image.src)}" alt="${C.image.alt}" />
+		<div class="${Styles.highlight}" data-type="highlight">
+			<div class="${Styles.disc}"></div>
+		</div>
 	</div>
 </div>`
 
@@ -29,12 +33,8 @@ function getMousePosition(e) {
 	const { clientX: x, clientY: y } = e
 	// STATE.mouse = { x, y }
 	const { left, top, width, height, center } = STATE.tile
-
 	const tileX = x - left - (width / 2) - STATE.app.left
 	const tileY = y - top - (height / 2) - STATE.app.top
-
-	// console.log(tileX, tileY)
-
 	const pctX = ((tileX / width) * 2)
 	const pctY = ((tileY / height) * 2) * -1
 	// console.table([{pctX}, {pctY}])
@@ -43,7 +43,8 @@ function getMousePosition(e) {
 	inner.style.transform = `rotateX(${pctY * 5}deg) rotateY(${pctX * 5}deg) scale(1.3)`
 	const maxPct = Math.max(pctX < 0 ? pctX*-1 : pctX, (pctY < 0 ? pctY*-1 : pctY))
 	inner.style.boxShadow = `${pctX * -1 * 40}px ${pctY * 40}px ${maxPct * 80}px 0px rgba(0,0,0, ${1 - (Math.max(0.4, (maxPct-0.6)))})`
-	// inner.style.transition = ''
+	const highlight = STATE.tile.elem.querySelector('[data-type="highlight"]')
+	highlight.style.transform = `translate3d(${50 * pctX}%, ${50 * pctY * -1}%, 0)`
 }
 
 
@@ -54,24 +55,27 @@ function tiltHover(e) {
 		inner.style.transform = ''
 		inner.style.boxShadow = ''
 	})
-	
+
 	const {
 		offsetWidth: width,
 		offsetHeight: height,
 		offsetTop: top,
 		offsetLeft: left,
-	} = this
-
+	} = this;
+	const highlight = this.querySelector('[data-type="highlight"]')
 	const center = {
 		x: left + (width / 2),
 		y: (top - window.scrollY) + (height / 2),
 	}
+
 	STATE.tile = { top: (top - window.scrollY), left, width, height, center, elem: this }
+	highlight.style.opacity = 1
 }
 
 function tiltReset(e) {
 	const inner = this.querySelector('[data-type="inner"]')
-	// inner.style.transition = 'transform 200ms'
+	const highlight = this.querySelector('[data-type="highlight"]')
+	highlight.style.opacity = 0
 	inner.style.transform = ''
 	inner.style.boxShadow = ''
 }
