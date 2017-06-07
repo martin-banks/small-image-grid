@@ -1,5 +1,5 @@
 import CONFIG from './config.json'
-import Content from './content'
+import Content from './content/content'
 import Styles from './app.sass'
 
 const STATE = {
@@ -18,7 +18,7 @@ const APP = document.querySelector(`#${CONFIG.projectName}`)
 
 const TileTemplate = C => `<div class="${Styles.tile}" data-type='tile'>
 	<div class="${Styles.inner}" data-type='inner' style="background: rgba(${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, 1)">
-		<!--<img class="${Styles.image}" src="${C.image.src}" alt="${C.image.alt}" />-->
+		<img class="${Styles.image}" src="${C.image.src.Img400}" alt="${C.image.alt}" />
 	</div>
 </div>`
 
@@ -37,7 +37,7 @@ function getMousePosition(e) {
 
 	const pctX = ((tileX / width) * 2)
 	const pctY = ((tileY / height) * 2) * -1
-	console.table([{pctX}, {pctY}])
+	// console.table([{pctX}, {pctY}])
 	// console.log(STATE.tile.elem)
 	const inner = STATE.tile.elem.querySelector('[data-type="inner"]')
 	inner.style.transform = `rotateX(${pctY * 5}deg) rotateY(${pctX * 5}deg) scale(1.3)`
@@ -48,7 +48,7 @@ function getMousePosition(e) {
 
 
 function tiltHover(e) {
-	console.log(this.__proto__)
+	// console.log(this.__proto__)
 	TILES.forEach(tile => {
 		const inner = tile.querySelector('[data-type="inner"]')
 		inner.style.transform = ''

@@ -1,8 +1,29 @@
+
 {
-	"projectName": "smallImageGrid",
+	"projectName": "APP__smallImageGrid",
 	"section": "network",
 	"path": {
-		"UAT": "localhost:8080",
-		"PROD": "http://media.news.com.au/nnd/t3interactives"
+		"DEV": "localhost:8080/",
+		"UAT": "localhost:8080/",
+		"PROD": "http://media.news.com.au/nnd/t3interactives/"
+	},
+	"localstyle": false,
+
+	"images": {
+		"jsPrefix": "Img",
+		"sizes": {
+			"thumb": 50,
+			"min": 200,
+			"max": 600,
+			"inc": 200
+		},
+		"quality": {
+			"image": 40,
+			"thumb": 80
+		},
+		"thumbBlurLarge": 2,
+		"thumbBlurSmall": 1,
+		"location": "./src/content/images"
 	}
+
 }
