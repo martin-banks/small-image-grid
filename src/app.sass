@@ -1,0 +1,60 @@
+
+=reset
+	position: relative
+	display: block
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+.wrapper
+	+reset
+	// border: solid 1px red
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: center
+	align-items: flex-start
+	
+
+.tile, .image
+	transition: transform 200ms, box-shadow 200ms
+
+.tile
+	+reset
+	// border: solid 1px lime
+	flex-grow: 1
+	flex-shrink: 1
+	flex-basis: auto
+	min-width: 150px
+	max-width: 250px
+	width: 30%
+	height: 200px
+	perspective: 100px
+	margin: 2px
+
+.inner
+	+reset
+	transition: transform 100ms
+	position: absolute
+	width: 100%
+	height: 100%
+	overflow: hidden
+	// box-shadow: 0 4px 8px -4px rgba(0,0,0, 1)
+
+.image
+	+reset
+	transition: transform 300ms
+	width: 100%
+	height: 100%
+	object-fit: cover
+	transform: scale(1.2)
+
+
+.tile:hover
+	// transform: scale(1.2)
+	z-index: 10
+	.inner
+		// box-shadow: 0 16px 24px -16px rgba(0,0,0, 1)
+		// transform: rotateX(10deg)
+	.image
+		transform: scale(1)

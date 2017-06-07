@@ -1,4 +1,4 @@
-
+import Image from './images/4_3.jpg'
 
 const Content = {
 	title: '',
@@ -7,7 +7,633 @@ const Content = {
 	parts: [
 		{
 			title: 'Title',
-			image: '',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
+		},
+		{
+			title: 'Title',
+			image: {
+				src: Image,
+				alt: 'Alt text for image'
+			},
 		},
 	],
 }
