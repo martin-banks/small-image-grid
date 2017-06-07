@@ -1,0 +1,8 @@
+{
+	"projectName": "smallImageGrid",
+	"section": "network",
+	"path": {
+		"UAT": "localhost:8080",
+		"PROD": "http://media.news.com.au/nnd/t3interactives"
+	}
+}
