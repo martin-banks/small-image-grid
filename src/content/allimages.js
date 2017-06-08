@@ -93,6 +93,20 @@ import * as hat_yellow5 from './images/hat_yellow5'
 
 const IMAGES = [
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_black_1,
 			alt: '',
@@ -100,6 +114,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_black_2,
 			alt: '',
@@ -107,6 +135,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_black_3,
 			alt: '',
@@ -114,6 +156,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_black_4,
 			alt: '',
@@ -121,6 +177,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_black_5,
 			alt: '',
@@ -128,6 +198,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_blue_1,
 			alt: '',
@@ -135,6 +219,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_blue_10,
 			alt: '',
@@ -142,6 +240,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_blue_11,
 			alt: '',
@@ -149,6 +261,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_blue_12,
 			alt: '',
@@ -156,6 +282,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_blue_13,
 			alt: '',
@@ -163,6 +303,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_blue_14,
 			alt: '',
@@ -170,6 +324,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_blue_15,
 			alt: '',
@@ -177,6 +345,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_blue_16,
 			alt: '',
@@ -184,6 +366,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_blue_17,
 			alt: '',
@@ -191,6 +387,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_blue_18,
 			alt: '',
@@ -198,6 +408,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_blue_19,
 			alt: '',
@@ -205,6 +429,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_blue_2,
 			alt: '',
@@ -212,6 +450,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_blue_20,
 			alt: '',
@@ -219,6 +471,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_blue_3,
 			alt: '',
@@ -226,6 +492,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_blue_4,
 			alt: '',
@@ -233,6 +513,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_blue_5,
 			alt: '',
@@ -240,6 +534,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_blue_6,
 			alt: '',
@@ -247,6 +555,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_blue_7,
 			alt: '',
@@ -254,6 +576,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_blue_8,
 			alt: '',
@@ -261,6 +597,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_blue_9,
 			alt: '',
@@ -268,6 +618,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_green_1,
 			alt: '',
@@ -275,6 +639,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_green_10,
 			alt: '',
@@ -282,6 +660,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_green_11,
 			alt: '',
@@ -289,6 +681,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_green_12,
 			alt: '',
@@ -296,6 +702,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_green_13,
 			alt: '',
@@ -303,6 +723,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_green_2,
 			alt: '',
@@ -310,6 +744,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_green_3,
 			alt: '',
@@ -317,6 +765,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_green_4,
 			alt: '',
@@ -324,6 +786,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_green_5,
 			alt: '',
@@ -331,6 +807,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_green_6,
 			alt: '',
@@ -338,6 +828,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_green_7,
 			alt: '',
@@ -345,6 +849,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_green_8,
 			alt: '',
@@ -352,6 +870,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_green_9,
 			alt: '',
@@ -359,6 +891,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_grey_1,
 			alt: '',
@@ -366,6 +912,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_grey_10,
 			alt: '',
@@ -373,6 +933,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_grey_11,
 			alt: '',
@@ -380,6 +954,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_grey_12,
 			alt: '',
@@ -387,6 +975,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_grey_13,
 			alt: '',
@@ -394,6 +996,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_grey_14,
 			alt: '',
@@ -401,6 +1017,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_grey_15,
 			alt: '',
@@ -408,6 +1038,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_grey_2,
 			alt: '',
@@ -415,6 +1059,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_grey_3,
 			alt: '',
@@ -422,6 +1080,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_grey_4,
 			alt: '',
@@ -429,6 +1101,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_grey_5,
 			alt: '',
@@ -436,6 +1122,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_grey_6,
 			alt: '',
@@ -443,6 +1143,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_grey_7,
 			alt: '',
@@ -450,6 +1164,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_grey_8,
 			alt: '',
@@ -457,6 +1185,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_grey_9,
 			alt: '',
@@ -464,6 +1206,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_orange_1,
 			alt: '',
@@ -471,6 +1227,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_orange_10,
 			alt: '',
@@ -478,6 +1248,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_orange_2,
 			alt: '',
@@ -485,6 +1269,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_orange_3,
 			alt: '',
@@ -492,6 +1290,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_orange_4,
 			alt: '',
@@ -499,6 +1311,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_orange_5,
 			alt: '',
@@ -506,6 +1332,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_orange_6,
 			alt: '',
@@ -513,6 +1353,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_orange_7,
 			alt: '',
@@ -520,6 +1374,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_orange_8,
 			alt: '',
@@ -527,6 +1395,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_orange_9,
 			alt: '',
@@ -534,6 +1416,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_red1,
 			alt: '',
@@ -541,6 +1437,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_red10,
 			alt: '',
@@ -548,6 +1458,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_red11,
 			alt: '',
@@ -555,6 +1479,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_red12,
 			alt: '',
@@ -562,6 +1500,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_red13,
 			alt: '',
@@ -569,6 +1521,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_red14,
 			alt: '',
@@ -576,6 +1542,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_red15,
 			alt: '',
@@ -583,6 +1563,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_red2,
 			alt: '',
@@ -590,6 +1584,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_red3,
 			alt: '',
@@ -597,6 +1605,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_red4,
 			alt: '',
@@ -604,6 +1626,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_red5,
 			alt: '',
@@ -611,6 +1647,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_red6,
 			alt: '',
@@ -618,6 +1668,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_red7,
 			alt: '',
@@ -625,6 +1689,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_red8,
 			alt: '',
@@ -632,6 +1710,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_red9,
 			alt: '',
@@ -639,6 +1731,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_violet_1,
 			alt: '',
@@ -646,6 +1752,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_violet_2,
 			alt: '',
@@ -653,6 +1773,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_violet_3,
 			alt: '',
@@ -660,6 +1794,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_violet_4,
 			alt: '',
@@ -667,6 +1815,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_violet_5,
 			alt: '',
@@ -674,6 +1836,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_violet_6,
 			alt: '',
@@ -681,6 +1857,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_violet_7,
 			alt: '',
@@ -688,6 +1878,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_violet_8,
 			alt: '',
@@ -695,6 +1899,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_yellow1,
 			alt: '',
@@ -702,6 +1920,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_yellow2,
 			alt: '',
@@ -709,6 +1941,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_yellow3,
 			alt: '',
@@ -716,6 +1962,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_yellow4,
 			alt: '',
@@ -723,6 +1983,20 @@ const IMAGES = [
 	},
 
 	{
+		text:[
+			{
+				type: 'title',
+				value: 'Grid image title',
+			},
+			{
+				type: 'caption',
+				value: 'Image caption blah blah blah',
+			},
+			{
+				type: 'credit',
+				value: 'Photographers Name',
+			},
+		],
 		image: {
 			src: hat_yellow5,
 			alt: '',

@@ -14,12 +14,24 @@ function isMobileDevice() {
 	return isMobile
 }
 
-
 const APP = document.querySelector(`#${CONFIG.projectName}`)
+
+
+const overlayChildren = {
+		title: value => `<h3 class="${Styles.title}">${value}</h3>`,
+		caption: value => `<p class="${Styles.caption}">${value}</p>`,
+		credit: value => `<p class="${Styles.credit}">${value}</p>`,
+	}
+
+	const captions = nodes => `<div class="${Styles.overlayContainer}" data-type="overlay">
+		${nodes.map(node => overlayChildren[node.type](node.value)).join('')}
+	</div>`
+
 
 const TileTemplate = C => `<div class="${Styles.tile}" data-type='tile'>
 	<div class="${Styles.inner}" data-type='inner' style="background: rgba(${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, 1)">
 		<img class="${Styles.image}" src="${C.image.src.Img200}" srcset="${createSrcSet(C.image.src)}" alt="${C.image.alt}" />
+		${captions(C.text)}
 		<div class="${Styles.highlight}" data-type="highlight">
 			<div class="${Styles.disc}"></div>
 		</div>
@@ -40,6 +52,7 @@ function getMousePosition(e) {
 	let pctX = ((tileX / width) * 2) * -1
 	let pctY = ((tileY / height) * 2)
 	const highlight = STATE.tile.elem.querySelector('[data-type="highlight"]')
+	const overlay = STATE.tile.elem.querySelector('[data-type="overlay"]')
 	// console.table([{pctX}, {pctY}])
 	const inner = STATE.tile.elem.querySelector('[data-type="inner"]')
 	// console.log(STATE.tile.elem)
@@ -48,11 +61,12 @@ function getMousePosition(e) {
 	if (pctX > 1) pctX = 1
 	if (pctX < -1) pctX = -1
 
-	inner.style.transform = `rotateX(${pctY * 2}deg) rotateY(${pctX * 2}deg) scale(1.2)`
+	inner.style.transform = `rotateX(${pctY * 1}deg) rotateY(${pctX * 1}deg) scale(1.1)`
+	overlay.style.transform = 'translateY(0)'
 
 	const maxPct = Math.max(pctX < 0 ? pctX*-1 : pctX, (pctY < 0 ? pctY*-1 : pctY))
 	inner.style.boxShadow = `${pctX * -1 * 40}px ${pctY * 40}px ${maxPct * 80}px 0px rgba(0,0,0, ${1 - (Math.max(0.4, (maxPct-0.6)))})`
-	highlight.style.transform = `translate3d(${50 * pctX * -1}%, ${50 * pctY}%, 0)`
+	highlight.style.transform = `translate3d(${100 * pctX * -1}%, ${100 * pctY}%, 0)`
 }
 
 
@@ -84,10 +98,12 @@ function tiltHover(e) {
 function tiltReset(e) {
 	const inner = this.querySelector('[data-type="inner"]')
 	const highlight = this.querySelector('[data-type="highlight"]')
+	const overlay = this.querySelector('[data-type="overlay"]')
 	TILES.forEach(tile => tile.querySelector('[data-type="inner"]').style.transform = '')
 	highlight.style.opacity = 0
 	inner.style.transform = ''
 	inner.style.boxShadow = ''
+	overlay.style.transform = ''
 }
 
 

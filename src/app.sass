@@ -1,3 +1,6 @@
+@import ./styleguide/styleguide
+@import ./styleguide/fonts/playfair
+@import ./styleguide/fonts/guardian
 
 =reset
 	position: relative
@@ -25,10 +28,10 @@
 	flex-grow: 1
 	flex-shrink: 1
 	flex-basis: auto
-	min-width: 120px
-	max-width: 300px
-	width: 30%
-	height: 200px
+	min-width: 400px
+	max-width: 600px
+	// width: 30%
+	height: 400px
 	perspective: 100px
 	margin: 2px
 
@@ -72,8 +75,8 @@
 	top: 50%
 	left: 50%
 	transform: translate3d(-50%, -50%, 0)
-	width: 100px
-	height: 100px
+	width: 200px
+	height: 200px
 	border-radius: 100%
 	opacity: 0
 
@@ -81,6 +84,62 @@
 		position: absolute
 		width: 100%
 		height: 100%
-		background: rgba(255,255,255, 0.5)
+		background: rgba(255,255,255, 0.2)
 		filter: blur(50px)
 		transform: translate3d(-50%, -50%, 0)
+
+
+
+
+
+.overlayContainer
+	+reset
+	transition: transform 300ms 
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+	// background: rgba($color-black, 0.3)
+	padding: $space-reg
+	background: gradient-medium($color-black, bottom)
+	transform: translateY(100%)
+
+
+.title
+	+reset
+	+playfair-bold
+	+text-shadow-1
+	color: $color-white
+	font-size: $space-lg
+	letter-spacing: 1px
+	padding: $space-xs 0
+	border-top: solid 1px rgba($color-white, 0.4)
+
+.caption, .credit
+	+reset
+	+guardian-light
+	+text-shadow-1
+	color: $color-white
+	font-size: $space-reg
+
+.caption
+	border-top: solid 1px rgba($color-white, 0.4)
+	padding-top: $space-xs
+	margin-top: 0
+
+.credit
+	color: $color-white
+	text-transform: uppercase
+	letter-spacing: 1px
+	font-size: $space-sm
+	padding-top: $space-xs
+	margin-top: 0
+
+.title + .credit
+	border-top: solid 1px rgba($color-white, 0.4)
+	padding-top: $space-xs
+
+.caption + .credit
+	padding-top: 0
+	border-top: none
+	margin-top: $space-xs
