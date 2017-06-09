@@ -17,6 +17,8 @@
 	flex-wrap: wrap
 	justify-content: center
 	align-items: flex-start
+	max-width: 90%
+	margin: 60px auto
 	
 
 .tile, .image
@@ -28,12 +30,14 @@
 	flex-grow: 1
 	flex-shrink: 1
 	flex-basis: auto
-	min-width: 400px
-	max-width: 600px
-	// width: 30%
+	// min-width: 400px
+	// max-width: 600px
+	width: 30%
+	max-width: 33%
 	height: 400px
 	perspective: 100px
 	margin: 2px
+	transform: scale(1)
 
 .inner
 	+reset
@@ -55,7 +59,7 @@
 
 
 .tile:hover
-	// transform: scale(1.2)
+	transform: scale(1.2)
 	z-index: 10
 	.inner
 		// box-shadow: 0 16px 24px -16px rgba(0,0,0, 1)
