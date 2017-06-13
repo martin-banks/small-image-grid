@@ -114,10 +114,11 @@ STATE.app = {
 	top: APP.offsetTop,
 }
 
-function POPUPIMG(src, srcset) {
+function POPUPIMG(src, srcset, caption) {
 	return `
 		<img src="${src}" srcset="${srcset}" alt="" />
 		<div class="${Styles.close}">X</div>
+		<div class="${Styles.popupText}">${caption.innerHTML}</div>
 	`
 }
 
@@ -127,7 +128,8 @@ const POPUP = APP.querySelector('[data-type="popup"]')
 
 function TileClick(e) {
 	const IMG = this.querySelector('img')
-	POPUP.innerHTML = POPUPIMG(IMG.src, IMG.srcset)
+	const CAPTION = this.querySelector('[data-type="overlay"]')
+	POPUP.innerHTML = POPUPIMG(IMG.src, IMG.srcset, CAPTION)
 	POPUP.style.zIndex = 99
 	POPUP.dataset.active = 'true'
 }
@@ -147,3 +149,4 @@ TILES.forEach(tile => {
 POPUP.addEventListener('click', closePopup)
 wrapper.addEventListener('mousemove', getMousePosition)
 wrapper.addEventListener('mouseleave', tiltReset)
+

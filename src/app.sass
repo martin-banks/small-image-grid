@@ -12,7 +12,6 @@
 
 .wrapper
 	+reset
-	// border: solid 1px red
 	display: flex
 	flex-direction: row
 	flex-wrap: wrap
@@ -28,7 +27,6 @@
 
 .tile
 	+reset
-	// border: solid 1px lime
 	flex-grow: 1
 	flex-shrink: 1
 	flex-basis: auto
@@ -166,7 +164,6 @@
 
 	img
 		position: absolute
-		// z-index: 10
 		top: 0
 		left: 0
 		width: 100vw
@@ -185,4 +182,14 @@
 		line-height: 40px
 		text-align: center
 		font-family: sans-serif
+
+.popupText
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+	padding: 32px
+	background: gradient-strong($color-black, bottom)
+
+
 
