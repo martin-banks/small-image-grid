@@ -40,7 +40,8 @@ const TileTemplate = C => `<div class="${Styles.tile}" data-type='tile'>
 
 const TileWrapper = tiles => `<section class="${Styles.wrapper}" data-type="wrapper">
 	${tiles.join('')}
-</section>`
+</section>
+<section class="${Styles.popupContainer}" data-type="popup"></section>`
 
 
 function getMousePosition(e) {
@@ -92,7 +93,6 @@ function tiltHover(e) {
 
 	STATE.tile = { top: (top - window.scrollY), left, width, height, center, elem: this }
 	highlight.style.opacity = 1
-
 }
 
 function tiltReset(e) {
@@ -111,12 +111,36 @@ APP.innerHTML = TileWrapper(Content.parts.map(tile => TileTemplate(tile)))
 // console.log(APP.offsetLeft, APP.offsetTop)
 STATE.app = {
 	left: APP.offsetLeft,
-	top: APP.offsetTop
+	top: APP.offsetTop,
 }
+
+function POPUPIMG(src, srcset) {
+	return `<img src="${src}" srcset="${srcset}" alt="" />`
+}
+
 const TILES = document.querySelectorAll('[data-type="tile"]')
 const wrapper = APP.querySelector('[data-type="wrapper"]')
+const POPUP = APP.querySelector('[data-type="popup"]')
 
-TILES.forEach(tile => tile.addEventListener('mouseover', tiltHover))
-TILES.forEach(tile => tile.addEventListener('mouseleave', tiltReset))
+function TileClick(e) {
+	const IMG = this.querySelector('img')
+	POPUP.innerHTML = POPUPIMG(IMG.src, IMG.srcset)
+	POPUP.style.zIndex = 99
+	POPUP.dataset.active = 'true'
+}
+
+function closePopup(e) {
+	this.style.zIndex = 0
+	this.innerHTML = ''
+	this.dataset.active = 'false'
+}
+
+TILES.forEach(tile => {
+	tile.addEventListener('mouseover', tiltHover)
+	tile.addEventListener('mouseleave', tiltReset)
+	tile.addEventListener('click', TileClick)
+})
+
+POPUP.addEventListener('click', closePopup)
 wrapper.addEventListener('mousemove', getMousePosition)
 wrapper.addEventListener('mouseleave', tiltReset)
