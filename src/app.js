@@ -115,7 +115,10 @@ STATE.app = {
 }
 
 function POPUPIMG(src, srcset) {
-	return `<img src="${src}" srcset="${srcset}" alt="" />`
+	return `
+		<img src="${src}" srcset="${srcset}" alt="" />
+		<div class="${Styles.close}">X</div>
+	`
 }
 
 const TILES = document.querySelectorAll('[data-type="tile"]')
