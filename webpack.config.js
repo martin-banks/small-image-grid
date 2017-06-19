@@ -17,7 +17,9 @@ const date = new Date()
 const datestamp = `${date.getFullYear()}${DD(1 + date.getMonth())}${DD(date.getDate())}`
 const timestamp = `${DD(date.getHours())}-${DD(date.getMinutes())}-${DD(date.getSeconds())}`
 
-const buildDir = `./BUILD/${ENV}/${ENV}__${datestamp}_${timestamp}`
+// const buildDir = `./BUILD/${ENV}/${ENV}__${datestamp}_${timestamp}`
+const buildDir = `./BUILD/${ENV}/${CFG.projectName}_|_${ENV}_|_${datestamp}_${timestamp}`
+
 const buildPath = path.join(__dirname, buildDir)
 const embedPath = CFG.path[ENV]
 const jsName = ENV === 'PROD' ? 'app.min.js' : 'app.js'
