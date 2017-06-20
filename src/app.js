@@ -82,6 +82,8 @@ function TileClick(e) {
 	})
 }
 
+
+
 function handlePopupClick(e) {
 	console.log(e.target)
 	const BUTTON = closest(e.target, '[data-type="button"]')
