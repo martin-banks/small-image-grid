@@ -26,7 +26,6 @@ function Close({ color = COLORS.default, size = SIZES.default } = {}) {
 	return `
 	<div data-type="button" data-action="close">
 		<svg
-			viewBox="0 0 ${SIZE}px ${SIZE}px" 
 			style="
 				position: absolute;
 				right: 16px;
@@ -54,7 +53,7 @@ function Close({ color = COLORS.default, size = SIZES.default } = {}) {
 			"
 			fill="${COLOR_ICON}" 
 			height="${SIZE}px" 
-			viewBox="0 0 ${SIZE}px ${SIZE}px" 
+
 			width="${SIZE}px"
 			xmlns="http://www.w3.org/2000/svg"
 		>

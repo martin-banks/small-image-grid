@@ -1,5 +1,6 @@
 import STATE from '../state'
 
+const makePositive = num => Math.sqrt(num ** 2)
 
 function getMousePosition(e) {
 	const { clientX: x, clientY: y } = e
@@ -9,7 +10,7 @@ function getMousePosition(e) {
 	const tileY = y - top - (height / 2) - STATE.app.top
 	let pctX = ((tileX / width) * 2) * -1
 	let pctY = ((tileY / height) * 2)
-	const highlight = STATE.tile.elem.querySelector('[data-type="highlight"]')
+	const highlight = STATE.tile.elem.querySelector('[data-type="highlight"]').querySelector('div')
 	const overlay = STATE.tile.elem.querySelector('[data-type="overlay"]')
 	const text = overlay.querySelectorAll('p, h3')
 	const inner = STATE.tile.elem.querySelector('[data-type="inner"]')
@@ -20,8 +21,6 @@ function getMousePosition(e) {
 	if (pctX > 1) pctX = 1
 	if (pctX < -1) pctX = -1
 
-	
-	const makePositive = num => Math.sqrt(num ** 2)
 	const maxPct = Math.max(makePositive(pctX), makePositive(pctY))
 	const SHADOW = {
 		x: `${pctX * -1 * 40}px`,
@@ -55,7 +54,9 @@ function getMousePosition(e) {
 			t.style.textShadow = `${TEXTSHADOW.x} ${TEXTSHADOW.y} ${TEXTSHADOW.blur} ${TEXTSHADOW.color}`
 		})
 		inner.style.boxShadow = `${SHADOW.x} ${SHADOW.y} ${SHADOW.blur} ${SHADOW.distance} ${SHADOW.color}`
-		highlight.style.transform = `translate3d(${POSITION.x}%, ${POSITION.y}%, ${POSITION.z}%)`
+		highlight.style.transform = `
+			translateX(${POSITION.x * 0.75}%) 
+			translateY(${POSITION.y * 0.75}%)`
 		img.style.transform = `translateX(${1 * POSITION.x * 0.015}%) translateY(${1 * POSITION.y * 0.015}%) scale(1.2)`
 		
 	})
@@ -77,7 +78,7 @@ function tiltHover(e) {
 		offsetTop: top,
 		offsetLeft: left,
 	} = this;
-	const highlight = this.querySelector('[data-type="highlight"]')
+	const highlight = this.querySelector('[data-type="highlight"]').querySelector('div')
 	const center = {
 		x: left + (width / 2),
 		y: (top - window.scrollY) + (height / 2),
@@ -96,7 +97,7 @@ function tiltHover(e) {
 
 function tiltReset(e) {
 	const inner = this.querySelector('[data-type="inner"]')
-	const highlight = this.querySelector('[data-type="highlight"]')
+	const highlight = this.querySelector('[data-type="highlight"]').querySelector('div')
 	const overlay = this.querySelector('[data-type="overlay"]')
 	STATE.TILES.forEach(tile => tile.querySelector('[data-type="inner"]').style.transform = '')
 	highlight.style.opacity = 0

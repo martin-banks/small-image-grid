@@ -85,7 +85,7 @@ function TileClick(e) {
 
 
 function handlePopupClick(e) {
-	console.log(e.target)
+	// console.log(e.target)
 	const BUTTON = closest(e.target, '[data-type="button"]')
 	if (!BUTTON) return
 	if (BUTTON.dataset.action === 'close') {
