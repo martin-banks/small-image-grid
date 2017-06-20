@@ -4,6 +4,8 @@ import Content from './content/content'
 import Styles from './app.sass'
 import createSrcSet from './functions/createSrcSet'
 import tiltOnHover from './functions/tiltOnHover'
+import Icon_close from './icons/close_black.svg'
+import Close from './icons/close'
 
 
 function isMobileDevice() {
@@ -57,7 +59,9 @@ const TileWrapper = tiles => `<section class="${Styles.wrapper}" data-type="wrap
 function POPUPIMG(src, srcset, caption) {
 	return `
 		<img src="${src}" srcset="${srcset}" alt="" />
-		<div class="${Styles.close}">X</div>
+		<div class="${Styles.close}">
+			${Close()}
+		</div>
 		<div class="${Styles.popupText}">${caption.innerHTML}</div>
 	`
 }
@@ -68,7 +72,13 @@ function TileClick(e) {
 	POPUP.innerHTML = POPUPIMG(IMG.src, IMG.srcset, CAPTION)
 	POPUP.style.zIndex = 99
 	POPUP.dataset.active = 'true'
+	Array.from(POPUP.querySelectorAll('h3, p')).forEach(elem => {
+		elem.style.transform = ''
+		elem.style.textShadow = ''
+	})
+	overlay.style.transform = ''
 }
+
 function closePopup(e) {
 	this.style.zIndex = 0
 	this.innerHTML = ''
