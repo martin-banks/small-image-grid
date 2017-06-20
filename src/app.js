@@ -129,6 +129,7 @@ delegate('[data-type="popup"]', 'click', '*', handlePopupClick)
 tiltOnHover({
 	targets: TILES,
 	wrapper,
+	app: STATE.app,
 })
 
 

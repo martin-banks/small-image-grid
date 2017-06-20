@@ -1,19 +1,21 @@
-import STATE from '../state'
+
 
 const makePositive = num => Math.sqrt(num ** 2)
+let TILES = null
+let hoverTile = null
+let appContainer = null
 
 function getMousePosition(e) {
 	const { clientX: x, clientY: y } = e
-	// STATE.mouse = { x, y }
-	const { left, top, width, height } = STATE.tile
-	const tileX = x - left - (width / 2) - STATE.app.left
-	const tileY = y - top - (height / 2) - STATE.app.top
+	const { left, top, width, height } = hoverTile
+	const tileX = x - left - (width / 2) - appContainer.left
+	const tileY = y - top - (height / 2) - appContainer.top
 	let pctX = ((tileX / width) * 2) * -1
 	let pctY = ((tileY / height) * 2)
-	const highlight = STATE.tile.elem.querySelector('[data-type="highlight"]').querySelector('div')
-	const overlay = STATE.tile.elem.querySelector('[data-type="overlay"]')
+	const highlight = hoverTile.elem.querySelector('[data-type="highlight"]').querySelector('div')
+	const overlay = hoverTile.elem.querySelector('[data-type="overlay"]')
 	const text = overlay.querySelectorAll('p, h3')
-	const inner = STATE.tile.elem.querySelector('[data-type="inner"]')
+	const inner = hoverTile.elem.querySelector('[data-type="inner"]')
 	const img = inner.querySelector('img')
 
 	if (pctY > 1) pctY = 1
@@ -58,15 +60,13 @@ function getMousePosition(e) {
 			translateX(${POSITION.x * 0.75}%) 
 			translateY(${POSITION.y * 0.75}%)`
 		img.style.transform = `translateX(${1 * POSITION.x * 0.015}%) translateY(${1 * POSITION.y * 0.015}%) scale(1.2)`
-		
 	})
-
 }
 
 
 function tiltHover(e) {
 	// console.log(this.__proto__)
-	STATE.TILES.forEach(tile => {
+	TILES.forEach(tile => {
 		const inner = tile.querySelector('[data-type="inner"]')
 		inner.style.transform = ''
 		inner.style.boxShadow = ''
@@ -84,7 +84,7 @@ function tiltHover(e) {
 		y: (top - window.scrollY) + (height / 2),
 	}
 
-	STATE.tile = {
+	hoverTile = {
 		top: (top - window.scrollY),
 		left,
 		width,
@@ -95,11 +95,12 @@ function tiltHover(e) {
 	highlight.style.opacity = 1
 }
 
+
 function tiltReset(e) {
 	const inner = this.querySelector('[data-type="inner"]')
 	const highlight = this.querySelector('[data-type="highlight"]').querySelector('div')
 	const overlay = this.querySelector('[data-type="overlay"]')
-	STATE.TILES.forEach(tile => tile.querySelector('[data-type="inner"]').style.transform = '')
+	TILES.forEach(tile => {tile.querySelector('[data-type="inner"]').style.transform = ''})
 	highlight.style.opacity = 0
 	inner.style.transform = ''
 	inner.style.boxShadow = ''
@@ -107,11 +108,13 @@ function tiltReset(e) {
 }
 
 
-function tiltOnHover({ targets = null, wrapper = null } = {}) {
+function tiltOnHover({ targets = null, wrapper = null, app = null } = {}) {
 	if (!targets) console.error('The targets array was not defined')
 	if (!wrapper) console.error('A wrapper dom element was not defined')
-	if (!wrapper || !targets) return
-
+	if (!app) console.error('App position left and width required')
+	if (!wrapper || !targets || !app) return
+	TILES = targets
+	appContainer = app
 	Array.from(targets).forEach(target => {
 		target.addEventListener('mouseover', tiltHover)
 		target.addEventListener('mouseleave', tiltReset)
