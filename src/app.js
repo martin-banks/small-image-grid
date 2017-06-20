@@ -3,6 +3,10 @@ import STATE from './state'
 import Content from './content/content'
 import Styles from './app.sass'
 import createSrcSet from './functions/createSrcSet'
+
+import delegate from './functions/delegate'
+import closest from './functions/closest'
+
 import tiltOnHover from './functions/tiltOnHover'
 import Icon_close from './icons/close_black.svg'
 import Close from './icons/close'
@@ -59,9 +63,9 @@ const TileWrapper = tiles => `<section class="${Styles.wrapper}" data-type="wrap
 function POPUPIMG(src, srcset, caption) {
 	return `
 		<img src="${src}" srcset="${srcset}" alt="" />
-		<div class="${Styles.close}">
-			${Close()}
-		</div>
+		${Close()}
+		<div class="${Styles.prev}" data-type="button" data-action="prev"><</div><!--
+		--><div class="${Styles.next}" data-type="button" data-action="next">></div>
 		<div class="${Styles.popupText}">${caption.innerHTML}</div>
 	`
 }
@@ -76,13 +80,24 @@ function TileClick(e) {
 		elem.style.transform = ''
 		elem.style.textShadow = ''
 	})
-	overlay.style.transform = ''
 }
 
-function closePopup(e) {
-	this.style.zIndex = 0
-	this.innerHTML = ''
-	this.dataset.active = 'false'
+function handlePopupClick(e) {
+	console.log(e.target)
+	const BUTTON = closest(e.target, '[data-type="button"]')
+	if (!BUTTON) return
+	if (BUTTON.dataset.action === 'close') {
+		POPUP.style.zIndex = 0
+		POPUP.innerHTML = ''
+		POPUP.dataset.active = 'false'
+		return
+	} else if(BUTTON.dataset.action === 'prev') {
+		console.log('getting prev')
+
+	} else if (BUTTON.dataset.action === 'next'){
+		console.log('getting next')
+	}
+
 }
 
 
@@ -106,7 +121,9 @@ TILES.forEach(tile => {
 	tile.addEventListener('click', TileClick)
 })
 
-POPUP.addEventListener('click', closePopup)
+delegate('[data-type="popup"]', 'click', '*', handlePopupClick)
+// POPUP.addEventListener('click', handlePopupClick)
+
 tiltOnHover({
 	targets: TILES,
 	wrapper,
