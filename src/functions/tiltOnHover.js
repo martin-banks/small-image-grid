@@ -170,8 +170,6 @@ function getMousePosition(e) {
 	const tileY = y - top - (height / 2) - appContainer.top
 	let pctX = limitRange({ number: ((tileX / width) * 2) * -1 })
 	let pctY = limitRange({ number: (tileY / height) * 2 })
-	console.log({tileY, height, top, y})
-	console.log({tileX, width, left, x})
 	const highlight = hoverTile.elem.querySelector('[data-type="highlight"]').querySelector('div')
 	const overlay = hoverTile.elem.querySelector('[data-type="overlay"]')
 	const text = overlay.querySelectorAll('p, h3')
