@@ -95,11 +95,9 @@ function handlePopupClick(e) {
 		return
 	} else if(BUTTON.dataset.action === 'prev') {
 		console.log('getting prev')
-
-	} else if (BUTTON.dataset.action === 'next'){
+	} else if (BUTTON.dataset.action === 'next') {
 		console.log('getting next')
 	}
-
 }
 
 
