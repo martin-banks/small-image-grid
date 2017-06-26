@@ -4,7 +4,7 @@
 	"section": "network",
 	"path": {
 		"DEV": "localhost:8080/",
-		"UAT": "localhost:8080/",
+		"UAT": "http://10.68.72.154:7777/_experiments/small_image_grid",
 		"PROD": "http://media.news.com.au/nnd/t3interactives/"
 	},
 	"localstyle": false,
@@ -25,5 +25,4 @@
 		"thumbBlurSmall": 1,
 		"location": "./src/content/images"
 	}
-
 }
