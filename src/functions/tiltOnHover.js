@@ -134,7 +134,7 @@ const makePositive = num => Math.sqrt(num ** 2)
 // Restrict number within a range positive/negative values
 // Default is between -1 and 1
 function limitRange({ number = null, limit = 1 } = {}) {
-	if (!number || typeof number !== 'number') {
+	if ((number !== 0 && !number) || typeof number !== 'number') {
 		console.error(`Number to limit is ${typeof number} type. \nIt should be a number or float`)
 		return ''
 	}
