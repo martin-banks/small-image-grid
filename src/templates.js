@@ -7,6 +7,7 @@ import Content from './content/content'
 // Currently experimenting with coded svg vs png files
 import Icon_close from './icons/close_black.svg'
 import Close from './icons/close'
+import Arrows from './icons/arrows'
 
 
 // TEMPLATES
@@ -62,13 +63,12 @@ function POPUPIMG({ index } = {}) {
 			alt="${Content.parts[index].image.alt}" 
 		/>
 		${Close()}
-		<div class="${Styles.prev}" data-type="button" data-action="prev">
-			<- back
-		</div><!--
-		--><div class="${Styles.next}" data-type="button" data-action="next">
-			next ->
+		${Arrows({ action: 'prev' })}
+		${Arrows({ action: 'next' })}
+
+		<div class="${Styles.popupText}">
+			${captions(Content.parts[index].text)}
 		</div>
-		<div class="${Styles.popupText}">${captions(Content.parts[index].text)}</div>
 	`
 }
 
