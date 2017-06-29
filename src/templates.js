@@ -54,7 +54,7 @@ const TileWrapper = tiles => `<section class="${Styles.wrapper}" data-type="wrap
 <section class="${Styles.popupContainer}" data-type="popup"></section>`
 
 
-function POPUPIMG({ src = '', srcset = '', caption = '', index } = {}) {
+function POPUPIMG({ index } = {}) {
 	return `
 		<img 
 			src="${Content.parts[index].image.src[`Img${CFG.images.sizes.max}`]}" 
@@ -62,9 +62,13 @@ function POPUPIMG({ src = '', srcset = '', caption = '', index } = {}) {
 			alt="${Content.parts[index].image.alt}" 
 		/>
 		${Close()}
-		<div class="${Styles.prev}" data-type="button" data-action="prev"><</div><!--
-		--><div class="${Styles.next}" data-type="button" data-action="next">></div>
-		<div class="${Styles.popupText}">${caption.innerHTML}</div>
+		<div class="${Styles.prev}" data-type="button" data-action="prev">
+			<- back
+		</div><!--
+		--><div class="${Styles.next}" data-type="button" data-action="next">
+			next ->
+		</div>
+		<div class="${Styles.popupText}">${captions(Content.parts[index].text)}</div>
 	`
 }
 

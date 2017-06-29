@@ -12,10 +12,9 @@ import delegate from './functions/delegate'
 import closest from './functions/closest'
 import tiltOnHover from './functions/tiltOnHover'
 import isMobileDevice from './functions/isMobile'
+import handlePopupClick from './functions/handlePopupClick'
 
 import templates from './templates'
-
-
 
 
 const {
@@ -44,25 +43,6 @@ function TileClick(e) {
 }
 
 
-function handlePopupClick(e) {
-	// console.log(e.target)
-	const BUTTON = closest(e.target, '[data-type="button"]')
-	if (!BUTTON) return
-	if (BUTTON.dataset.action === 'close') {
-		POPUP.style.zIndex = 0
-		POPUP.innerHTML = ''
-		POPUP.dataset.active = 'false'
-	} else if (BUTTON.dataset.action === 'prev') {
-		// console.log('getting prev')
-		STATE.activeIndex--
-		POPUP.innerHTML = POPUPIMG({ index: STATE.activeIndex })
-
-	} else if (BUTTON.dataset.action === 'next') {
-		// console.log('getting next')
-		STATE.activeIndex++
-		POPUP.innerHTML = POPUPIMG({ index: STATE.activeIndex })
-	}
-}
 
 // get app container into global object: prevent multiple queries
 const APP = document.querySelector(`#${CONFIG.projectName}`)
@@ -88,6 +68,7 @@ TILES.forEach(tile => {
 
 delegate('[data-type="popup"]', 'click', '*', handlePopupClick)
 // POPUP.addEventListener('click', handlePopupClick)
+window.onkeydown = handlePopupClick
 
 tiltOnHover({
 	targets: TILES,
