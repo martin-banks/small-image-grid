@@ -119,6 +119,9 @@
 	opacity: 0
 	// transform: translateY(100%)
 
+.popupText
+	.overlayContainer
+		opacity: 1
 
 .title
 	+reset
@@ -191,7 +194,7 @@
 		width: 100vw
 		height: 100vh
 		object-fit: contain
-		object-position: 0 0
+		object-position: 50% 0
 
 [data-active="true"].popupContainer	
 	background: $color-black
@@ -218,11 +221,14 @@
 
 .prev, .next
 	+reset
+	position: absolute
 	color: white
 	display: inline-block
 	width: 50%
 	border: solid 1px lime
-	transform: translateY(300px)
+	top: 50%
+	transform: translateY(-50%)
 	font-size: 40px
 .next
 	text-align: right
+	right: 0
