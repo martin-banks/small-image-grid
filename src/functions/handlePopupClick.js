@@ -24,12 +24,14 @@ function actions() {
 		STATE.activeIndex = null
 	}
 	const next = () => {
-		// Get and dispaly the next image
+		// Get and display the next image
+		// update the activeIndex in state to reflect the new active image
 		STATE.activeIndex++
 		STATE.POPUP.innerHTML = POPUPIMG({ index: STATE.activeIndex })
 	}
 	const prev = () => {
-		// Get and dispaly the previous image
+		// Get and display the previous image
+		// update the activeIndex in state to reflect the new active image
 		STATE.activeIndex--
 		STATE.POPUP.innerHTML = POPUPIMG({ index: STATE.activeIndex })
 	}
