@@ -17,9 +17,10 @@
 	flex-wrap: wrap
 	justify-content: center
 	align-items: flex-start
-	max-width: 90%
+	// max-width: 1000px
 	margin: 60px auto
 	z-index: 1
+
 	
 
 .tile
@@ -30,13 +31,17 @@
 	flex-grow: 1
 	flex-shrink: 1
 	flex-basis: auto
-	// min-width: 400px
-	// max-width: 600px
-	width: 30%
-	max-width: 33%
+	// min-width: 30%
+	width: 40%
+	padding-bottom: 40%
+	max-width: 50%
+	@media screen and (min-width: 600px)
+		width: 30%
+		max-width: 600px
+		padding-bottom: 30%
+
 	// height: 400px
 	height: 0
-	padding-bottom: 30%
 	perspective: 100px
 	margin: 2px
 	transform: scale(1)
@@ -109,7 +114,6 @@
 .overlayContainer
 	+reset
 	transition: opacity 300ms 
-	position: absolute
 	bottom: 0
 	left: 0
 	width: 100%
@@ -118,10 +122,10 @@
 	background: gradient-medium($color-black, bottom)
 	opacity: 0
 	// transform: translateY(100%)
+	@media screen and (min-width: 600px)
+		position: absolute
 
-.popupText
-	.overlayContainer
-		opacity: 1
+
 
 .title
 	+reset
@@ -145,6 +149,8 @@
 	+text-shadow-1
 	color: $color-white
 	font-size: $space-reg
+	line-height: 1.3 !important
+
 
 .caption
 	border-top: solid 1px rgba($color-white, 0.4)
@@ -192,9 +198,18 @@
 		top: 0
 		left: 0
 		width: 100vw
-		height: 100vh
-		object-fit: contain
-		object-position: 50% 0
+		height: 50vh
+		object-fit: cover
+		object-position: 50% 50%
+
+[data-mobile="false"] 
+	.popupContainer
+		img
+			height: 100%
+			object-fit: contain
+			object-position: 50% 0%
+
+
 
 [data-active="true"].popupContainer	
 	background: $color-black
@@ -210,18 +225,36 @@
 		font-family: sans-serif
 
 .popupText
-	position: absolute
-	bottom: 0
+	+reset
+	position: relative
 	left: 0
+	height: 50%
+	top: 50%
 	width: 100%
 	padding: 32px
-	background: gradient-strong($color-black, bottom)
+	overflow: auto
+	.overlayContainer
+		opacity: 1
+		
+	@media screen and (min-width: 600px)
+		position: absolute
+		bottom: 0
+		height: auto
+		background: gradient-strong($color-black, bottom)
+		.overlayContainer
+			position: absolute
+			top: inherit
+			bottom: 0
+			width: auto
+			padding: $space-xl
 
 
+// [data-mobile="false"]
+// 	.popupText
+// 		top: none
 
 .prev, .next
 	+reset
-	border: solid 1px lime
 	position: absolute
 	color: white
 	display: inline-block
@@ -233,3 +266,6 @@
 	right: 0
 .prev
 	left: 0
+
+.prev, .next, .close
+	z-index: 900

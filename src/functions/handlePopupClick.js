@@ -15,7 +15,7 @@ const KEYS = {
 // If there is an activeIndex value in the STATE object then the
 // popup is active and returns an object of actions that can be performed
 function actions() {
-	if (!STATE.activeIndex) return false
+	if (STATE.activeIndex !== 0 && !STATE.activeIndex) return false
 	const close = () => {
 		// Close the popup
 		STATE.POPUP.style.zIndex = 0
@@ -44,7 +44,6 @@ function handlePopupClick(e) {
 	// If there aren't any, then end function now
 	const doAction = actions()
 	if (!doAction) return
-
 	// for keyboard events we get it's keycode, 
 	// cross reference the keys obj above to get the approriate action type for this key
 	let actionToTake = null

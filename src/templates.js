@@ -14,14 +14,16 @@ import Arrows from './icons/arrows'
 // ---------
 // tile text overlay elements
 const overlayChildren = {
-	title: value => `<h3 class="${Styles.title}"><span>${value}</span></h3>`,
-	caption: value => `<p class="${Styles.caption}">${value}</p>`,
-	credit: value => `<p class="${Styles.credit}">${value}</p>`,
+	title: (value, container) => `<h3 class="${Styles.title}"><span>${value}</span></h3>`,
+	caption: (value, container) => container !== 'tile' ? `<p class="${Styles.caption}">${value}</p>` : '',
+	credit: (value, container) => container !== 'tile' ? `<p class="${Styles.credit}">${value}</p>` : '',
 }
 
-const captions = nodes => `<div class="${Styles.overlayContainer}" data-type="overlay">
-	${nodes.map(node => overlayChildren[node.type](node.value)).join('')}
-</div>`
+function captions({ nodes, container = 'all' } = {}) {
+	return `<div class="${Styles.overlayContainer}" data-type="overlay">
+		${nodes.map(node => overlayChildren[node.type](node.value, container)).join('')}
+	</div>`
+}
 
 const randomColor = () => [0, 0, 0].map(() => Math.floor(Math.random() * 255)).join()
 
@@ -42,7 +44,7 @@ const TileTemplate = ({ tile, i } = {}) => `<div
 				alt="${tile.image.alt}"
 			/>
 		</div>
-		${captions(tile.text)}
+		${captions({ nodes: tile.text, container: 'tile' })}
 		<div class="${Styles.highlight}" data-type="highlight">
 			<div class="${Styles.disc}"></div>
 		</div>
@@ -62,13 +64,13 @@ function POPUPIMG({ index } = {}) {
 			srcset="${createSrcSet(Content.parts[index].image.src)}" 
 			alt="${Content.parts[index].image.alt}" 
 		/>
-		${Close()}
-		${Arrows({ action: 'prev' })}
-		${Arrows({ action: 'next' })}
-
 		<div class="${Styles.popupText}">
-			${captions(Content.parts[index].text)}
+			${captions({ nodes: Content.parts[index].text, container: 'popup' })}
 		</div>
+		${Close()}
+		${index > 0 ? Arrows({ action: 'prev' }) : ''}
+		${index < (Content.parts.length - 1) ? Arrows({ action: 'next' }) : ''}
+
 	`
 }
 

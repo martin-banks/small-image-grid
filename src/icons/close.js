@@ -28,8 +28,8 @@ function Close({ color = COLORS.default, size = SIZES.default } = {}) {
 		<svg
 			style="
 				position: absolute;
-				right: 16px;
-				top: 16px;
+				right: 8px;
+				top: 8px;
 				width: ${SIZE}px; 
 				height: ${SIZE}px;
 			"
@@ -47,8 +47,8 @@ function Close({ color = COLORS.default, size = SIZES.default } = {}) {
 		<svg
 			style="
 				position: absolute;
-				top: 25px;
-				right: 8px;
+				top: 17px;
+				right: 0px;
 				transform: scale(1.1)
 			"
 			fill="${COLOR_ICON}" 
